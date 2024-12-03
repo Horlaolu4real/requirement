@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.main {
+  //   width: 100%;
+  //   min-height: 100vh;
+  .desktop {
+    .header {
+      background-color: #001041;
+      padding: 50px 15px 15px 15px;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      font-size: 25px;
+      font-family: "Lato", sans-serif;
+    }
+    .txt {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .input_field {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 35px; // Default margin
+
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        .input_1,
+        .input_2 {
+          flex-direction: column;
+          gap: 5px;
+          margin-bottom: 10px;
+
+          label {
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+
+          .log_input {
+            border-radius: 3px;
+            border: 1px solid #f2f2f2;
+            padding: 12px 12px;
+            color: black;
+            width: 130%; 
+
+            &:hover {
+              background-color: #e8f0fe;
+            }
+          }
+
+          .eye_image {
+            position: absolute;
+            top: 30px;
+            right: -70px;
+          }
+        }
+
+        .btn_content {
+          display: flex;
+          justify-content: space-between;
+          width: 130%;
+          margin-top: 30px;
+
+          .btn_part {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+          }
+
+          .btn .but {
+            background-color: #92aede;
+            outline: none;
+            padding: 15px 30px;
+            color: #fff;
+            border: 1px solid #92aede;
+            font-size: 15px;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+              sans-serif;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: #001041;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
+
+        .form {
+          .input_1,
+          .input_2 {
+            .log_input {
+              width: 100%;
+              padding: 10px;
+            }
+
+            .eye_image {
+              top: 25px;
+              right: 10px;
+            }
+          }
+
+          .btn_content {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+
+            .btn_part,
+            .btn .but {
+              padding: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 480px) {
+        margin-bottom: 15px;
+
+        .form {
+          .input_1,
+          .input_2 {
+            .log_input {
+              padding: 8px;
+              font-size: 14px;
+            }
+          }
+
+          .btn_content {
+            margin-top: 15px;
+
+            .btn .but {
+              font-size: 14px;
+              padding: 8px 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #f4f4f4;
+      padding: 75px 0px;
+
+      .first {
+        font-size: 20px;
+        font-family: monospace;
+        padding-bottom: 15px;
+      }
+
+      .reel {
+        width: 25%;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .btn {
+        margin-top: 25px;
+        background-color: #ffc400;
+        outline: none;
+        border: 1px solid #ffc400;
+        padding: 10px 5px;
+        font-size: 15px;
+        color: #0e1e78;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      @media (max-width: 768px) {
+        padding: 50px 15px;
+        text-align: center;
+
+        .first {
+          font-size: 18px;
+        }
+
+        .reel {
+          width: 80%;
+          font-size: 14px;
+        }
+
+        .btn {
+          font-size: 13px;
+          padding: 8px 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        padding: 30px 10px;
+
+        .first {
+          font-size: 16px;
+        }
+
+        .reel {
+          width: 100%;
+          font-size: 12px;
+        }
+
+        .btn {
+          font-size: 12px;
+          padding: 6px 8px;
+        }
+      }
+    }
+  }
+}
